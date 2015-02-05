@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+html, body, body>div {
+  height: 100%;
+}
+.input_area {
+  width: 100%;
+}
+.input_area [name="search"] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 4px 0;
+}
+.output_area {
+  overflow-y: scroll;
+  height: calc(100% - 110px);
+}
+.tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tabs .tab {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+}
+.tabs .tab:focus {
+  outline: none;
+}
+.tabs .tab.selected {
+  background-color: #add8e6;
+}
+.tabs .name {
+  font-size: 100%;
+}
+.tabs .url {
+  font-size: 80%;
+}

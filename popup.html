@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="TabFlow">
+  <head>
+    <meta charset="UTF-8">
+    <title>TabFlow</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div ng-controller="MainCtrl">
+      <div class="input_area">
+        <input type="text"
+          name="search"
+          placeholder="{{ph_search}}"
+          ng-model="keyword"
+          ng-keyup="filter()"
+          >
+      </div>
+      <div class="output_area">
+        <ul class="tabs">
+          <li tabIndex="0"
+            ng-class="{ tab: true, selected: tab.selected}"
+            ng-repeat="tab in tabs"
+            ng-focus="focusTab($event, tab)"
+            ng-blur="blurTab($event, tab)"
+            ng-keydown="keydownOnTab($event)"
+            >
+            <div class="name">{{tab.name}}</div>
+            <div class="url">{{tab.url}}</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

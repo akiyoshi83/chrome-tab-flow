@@ -1,0 +1,43 @@
+{
+  "manifest_version": 2,
+  "name": "TabFlow",
+  "description": "__MSG_description__",
+  "version": "1.0",
+
+  "author": "akiyoshi83",
+  "homepage_url": "https://github.com/akiyoshi83/tab-flow",
+
+  "default_locale": "en",
+
+  "permissions": [
+    "tabs",
+    "bookmarks",
+    "http://*/*",
+    "https://*/*"
+  ],
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+  "browser_action": {
+    "default_title": "TabFlow",
+    "default_icon": "icon48.png",
+    "default_popup": "popup.html"
+  },
+
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+L",
+        "mac": "MacCtrl+L",
+        "chromeos": "Ctrl+L",
+        "linux": "Ctrl+L"
+      }
+    }
+  }
+}

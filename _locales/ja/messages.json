@@ -1,0 +1,11 @@
+{
+  "description": {
+    "message": "タブやブックマークをインクリメンタル検索・操作できます。",
+    "description": "descriotion on manifest.json"
+  },
+
+  "placeholderSearch": {
+    "message": "検索キーワードを入力してください...",
+    "description": "placeholder search keyword"
+  }
+}

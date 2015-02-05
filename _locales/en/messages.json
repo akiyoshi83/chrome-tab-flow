@@ -1,0 +1,11 @@
+{
+  "description": {
+    "message": "Incremental search and manage tags and bookmarks.",
+    "description": "descriotion on manifest.json"
+  },
+
+  "placeholderSearchKeyword": {
+    "message": "Input search keyword",
+    "description": "placeholder search keyword"
+  }
+}
