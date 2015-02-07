@@ -12,9 +12,12 @@ html, body, body>div {
   margin: 10px 0;
   padding: 4px 0;
 }
+.input_area [name="search"]:focus {
+  outline: none;
+}
 .output_area {
   overflow-y: scroll;
-  height: calc(100% - 110px);
+  height: calc(100% - 50px);
 }
 .tabs {
   list-style: none;
@@ -22,19 +25,27 @@ html, body, body>div {
   padding: 0;
 }
 .tabs .tab {
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #CCCCCC;
+  border-top: none;
   padding: 4px;
+  cursor: pointer;
+}
+.tabs .tab:first-child {
+  border-top: 1px solid #CCCCCC;
 }
 .tabs .tab:focus {
   outline: none;
 }
 .tabs .tab.selected {
-  background-color: #add8e6;
+  background-color: #B5D6EB;
+  color: #0B4971;
+  font-weight: bold;
 }
 .tabs .name {
   font-size: 100%;
 }
 .tabs .url {
-  font-size: 80%;
+  font-size: 90%;
+  color: #0B4971;
+  margin-top: 4px;
 }
