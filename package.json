@@ -1,0 +1,30 @@
+{
+  "name": "chrome-tab-flow",
+  "version": "1.0.0",
+  "description": "Incremental search and manage tags and bookmarks.",
+  "main": "popup.js",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akiyoshi83/chrome-tab-flow.git"
+  },
+  "author": "akiyoshi83",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akiyoshi83/chrome-tab-flow/issues"
+  },
+  "homepage": "https://github.com/akiyoshi83/chrome-tab-flow#readme",
+  "dependencies": {
+    "mithril": "^0.2.0"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "gulp": "^3.9.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

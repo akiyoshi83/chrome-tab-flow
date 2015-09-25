@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "TabFlow",
   "description": "__MSG_description__",
-  "version": "1.0",
+  "version": "1.0.0",
 
   "author": "akiyoshi83",
   "homepage_url": "https://github.com/akiyoshi83/tab-flow",

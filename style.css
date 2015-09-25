@@ -4,47 +4,73 @@
 html, body, body>div {
   height: 100%;
 }
+.header {
+  width: 100%;
+}
+.header > a {
+  display: inline-block;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  padding: 4px 0;
+  text-align: center;
+  width: 10em;
+}
+.header > a:first-child {
+  border-right: none;
+}
+.header > a.selected {
+  background-color: #B5D6EB;
+  color: #0B4971;
+  font-weight: bold;
+}
 .input_area {
   width: 100%;
 }
-.input_area [name="search"] {
+.input_area input.search {
   width: 100%;
   margin: 10px 0;
   padding: 4px 0;
 }
-.input_area [name="search"]:focus {
+.input_area input.search:focus {
   outline: none;
 }
 .output_area {
   overflow-y: scroll;
   height: calc(100% - 50px);
 }
-.tabs {
+.tabs,
+.bookmarks {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.tabs .tab {
+.tabs .tab,
+.bookmarks .bookmark {
   border: 1px solid #CCCCCC;
   border-top: none;
   padding: 4px;
   cursor: pointer;
 }
-.tabs .tab:first-child {
+.tabs .tab:first-child,
+.bookmarks .bookmark:first-child {
   border-top: 1px solid #CCCCCC;
 }
-.tabs .tab:focus {
+.tabs .tab:focus,
+.bookmarks .bookmark:focus {
   outline: none;
 }
-.tabs .tab.selected {
+.tabs .tab.selected,
+.bookmarks .bookmark.selected {
   background-color: #B5D6EB;
   color: #0B4971;
   font-weight: bold;
 }
-.tabs .name {
+.tabs .name,
+.bookmarks .name {
   font-size: 100%;
 }
-.tabs .url {
+.tabs .url,
+.bookmarks .url {
   font-size: 90%;
   color: #0B4971;
   margin-top: 4px;
