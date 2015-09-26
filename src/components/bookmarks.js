@@ -30,7 +30,8 @@ let Bookmarks = {
       let target = ev.currentTarget;
       // Enter
       if (kc === 13) {
-        Bookmark.open(vm.list().find((t) => t.id() == target.dataset.bookmarkId));
+        let bookmark = vm.list().find((t) => t.id() == target.dataset.bookmarkId);
+        bookmark.open();
       }
       // UP, K
       else if (kc === 38 || kc === 75) {

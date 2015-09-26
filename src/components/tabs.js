@@ -31,7 +31,8 @@ let Tabs = {
       let target = ev.currentTarget;
       // Enter
       if (kc === 13) {
-        Tab.activate(TabsVm.list().find((t) => t.id() == target.dataset.tabId));
+        let tab = TabsVm.list().find((t) => t.id() == target.dataset.tabId);
+        tab.activate();
       }
       // UP, K
       else if (kc === 38 || kc === 75) {

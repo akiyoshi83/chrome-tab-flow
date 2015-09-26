@@ -32,12 +32,12 @@ class Bookmark {
     });
   }
 
-  static open(bookmark) {
-    return new Promise(function(resolve, reject) {
-      if (typeof bookmark.url() === 'undefined') {
+  open() {
+    return new Promise((resolve, reject) => {
+      if (typeof this.url() === 'undefined') {
         reject(new Error('argument 1: bookmark is required'));
       }
-      var url = bookmark.url();
+      var url = this.url();
       chrome.tabs.create({ url: url });
     });
   }

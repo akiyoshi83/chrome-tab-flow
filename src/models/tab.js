@@ -36,14 +36,14 @@ class Tab {
     });
   }
 
-  static activate(tab) {
-    return new Promise(function(resolve, reject) {
-      if (typeof tab.id() === 'undefined'
-      || typeof tab.windowId() === 'undefined') {
+  activate() {
+    return new Promise((resolve, reject) => {
+      if (typeof this.id() === 'undefined'
+      || typeof this.windowId() === 'undefined') {
         reject(new Error('argument 1: tab is required'));
       }
-      var windowId = tab.windowId();
-      var tabId = tab.id();
+      var windowId = this.windowId();
+      var tabId = this.id();
       // activate window
       chrome.windows.update(windowId, {
         focused: true,
