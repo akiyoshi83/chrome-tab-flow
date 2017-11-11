@@ -48,12 +48,6 @@ let Tabs = {
         ev.preventDefault();
       }
     }
-    this.focus = (ev) => {
-      ev.currentTarget.classList.add('selected');
-    }
-    this.blur = (ev) => {
-      ev.currentTarget.classList.remove('selected');
-    }
   },
 
   view(ctrl) {
@@ -75,9 +69,7 @@ let Tabs = {
           return m('li.tab', {
             tabIndex: 0, // form要素以外にfocusを当てるために
             'data-tab-id': tab.id(),
-            onkeydown: ctrl.keydown,
-            onfocus: ctrl.focus,
-            onblur: ctrl.blur
+            onkeydown: ctrl.keydown
           }, [
             m('.name', tab.title()),
             m('.url', tab.url()),

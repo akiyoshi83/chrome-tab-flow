@@ -47,12 +47,6 @@ let Bookmarks = {
         ev.preventDefault();
       }
     }
-    this.focus = (ev) => {
-      ev.currentTarget.classList.add('selected');
-    }
-    this.blur = (ev) => {
-      ev.currentTarget.classList.remove('selected');
-    }
   },
 
   view(ctrl) {
@@ -74,9 +68,7 @@ let Bookmarks = {
           return m('li.bookmark', {
             tabIndex: 0, // form要素以外にfocusを当てるために
             'data-bookmark-id': bookmark.id(),
-            onkeydown: ctrl.keydown,
-            onfocus: ctrl.focus,
-            onblur: ctrl.blur
+            onkeydown: ctrl.keydown
           }, [
             m('.name', bookmark.title()),
             m('.url', bookmark.url()),

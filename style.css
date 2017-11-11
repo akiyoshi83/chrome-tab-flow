@@ -62,9 +62,6 @@ body {
 .tabs .tab:focus,
 .bookmarks .bookmark:focus {
   outline: none;
-}
-.tabs .tab.selected,
-.bookmarks .bookmark.selected {
   background-color: #B5D6EB;
   color: #0B4971;
   font-weight: bold;
