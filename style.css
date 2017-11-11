@@ -4,6 +4,10 @@
 html, body, body>div {
   height: 100%;
 }
+body {
+  min-width: 600px;
+  min-height: 480px;
+}
 .header {
   width: 100%;
 }
